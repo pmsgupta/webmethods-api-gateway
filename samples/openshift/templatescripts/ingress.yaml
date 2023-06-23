@@ -1,0 +1,27 @@
+
+# - kind: Ingress
+#   apiVersion: networking.k8s.io/v1
+#   metadata:
+#     name: apigateway
+#   spec:
+#     rules:
+#       - host: mah2-apigateway-ui.apps.ocp1.eur.ad.sag
+#         http:
+#           paths:
+#             - path: /
+#               pathType: Prefix
+#               backend:
+#                 service:
+#                   name: mah-apigateway
+#                   port:
+#                     name: 9072-tcp
+#       - host: mah2-apigateway-is-ui.apps.ocp1.eur.ad.sag
+#         http:
+#           paths:
+#             - path: /
+#               pathType: Prefix
+#               backend:
+#                 service:
+#                   name: mah-apigateway
+#                   port:
+#                     name: 5555-tcp
